@@ -2,20 +2,43 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
-h1 {
-  color: SeaGreen;
-  width: 215px;
-  margin: 30px auto;
+article {
+  width: 85%;
+  margin: 20px auto;
 }
 
+h1 {
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+}
 
-p, 
-li {
+h2,
+h3 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  background-color: hsl(184, 46%, 57%);
+}
+
+.project1 section {
+  width: 75%;
+  margin: 0 auto;
+}
+
+p {
   font-size: 18px;
 }
 
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+video {
+  width: 100%;
+  margin: 0 auto;
 }
