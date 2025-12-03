@@ -7,6 +7,12 @@ article {
   margin: 20px auto;
 }
 
+header {
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+}
+
 h1 {
   width: 50%;
   margin: 30px auto;

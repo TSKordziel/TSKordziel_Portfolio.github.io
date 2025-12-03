@@ -9,30 +9,55 @@
 </head>
 
 <body>
-    <h1>Tyler Kordziel</h1>
-    <article>
+    <header>
+        <h1>TYLER KORDZIEL</h1>
+        <h2>SOFTWARE ENGINEER</h2>
         <p>
-            I made this site with my new found skills in HTML and CSS. It is meant to showcase some of the coding
-            projects
-            that I have done and/or am currently working on.
+            ME turned SWE — I design software like engineered systems: structured, testable, and built to solve complex
+            problems.
         </p>
-        <p>You can find the source code of my projects on my <a href="https://github.com/TSKordziel"
-                target="_blank">GitHub</a> page.</p>
-    </article>
+        <p>
+            Rust, graph modeling, UI state systems, and constraint-based problem solving.
+        </p>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/TSKordziel" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <article class="project1">
-        <h2>Project #1</h2>
+        <h2>Project Card 1 — Codenames Helper (Rust GUI)</h2>
         <h3>My Codenames Helper App</h3>
-        <p>This is an app that I decided to write 100% in Rust from the ground up. It uses the Iced GUI framework for
-            the UI and it utilizes adaptive text for automated font scaling. The word list is baked into the final
-            executable binary allowing for a no-install/zero-config experience once compiled.</p>
-        <p>The idea behind this app was to make it easier to set up and play the the board game Codenames. You can find
-            a description of how it is played <a href="https://www.czechgames.com/games/codenames">here</a>.</p>
-        <p>The "Word Cards" within the app are randomly filled with words and the clue givers can easily change the
-            background of each card according to what team the word belongs to.</p>
+        <p><strong>Title:</strong> Codenames Helper — Rust Desktop App</p>
+        <p><strong>Stack:</strong> Rust, Iced (GUI), rand, pattern matching, state management</p>
+        <p><strong>What it is:</strong></p>
+        <p>A desktop GUI tool for running Codenames word-game sessions locally with adaptive layout, word shuffling, and
+            role tracking. If you are not familiar with the game see the rules <a
+                href="https://github.com/TSKordziel/codenames_helper">Here</a></p>
+        <p><strong>Highlights:</strong></p>
+        <ul>
+            <li>
+                Built a full GUI in Rust using Iced, including custom button styles and responsive font scaling.
+            </li>
+            <li>Implemented a message-driven state system (update/view pattern) to manage tile selection, role
+                assignment, and game resets.</li>
+            <li>Used compile-time embedded word lists via include_str!() for zero external dependencies and fast
+                startup.</li>
+            <li>Designed a 5×5 grid layout with dynamic resizing and contrast-aware color changes based on enum state
+                (Choice::Red, Blue, Neutral, Death).</li>
+            <li>Abstracted UI behavior into component-style helpers (button_helper, make_container) for reusable code
+                and consistent styling.</li>
+        </ul>
+        <p><strong>Repository:</strong> <a href="https://github.com/TSKordziel/codenames_helper">Here</a></p>
+        <p><strong>Video:</strong></p>
         <section class="project1">
             <video controls muted src="resources/media/2025-11-19 15-24-59.mkv"></video>
         </section>
+        <p><strong>Status:</strong> Complete / actively refined</p>
+        <p><strong>Why it matters:</strong></p>
+        <p>Demonstrates real Rust application architecture (not just algorithms), stateful UI, and hands-on experience
+            shipping a usable desktop tool.</p>
     </article>
 
 
