@@ -28,8 +28,6 @@
 
     <article class="project1">
         <h2>Project Card 1 — Codenames Helper (Rust GUI)</h2>
-        <h3>My Codenames Helper App</h3>
-        <p><strong>Title:</strong> Codenames Helper — Rust Desktop App</p>
         <p><strong>Stack:</strong> Rust, Iced (GUI), rand, pattern matching, state management</p>
         <p><strong>What it is:</strong></p>
         <p>A desktop GUI tool for running Codenames word-game sessions locally with adaptive layout, word shuffling, and
@@ -58,6 +56,50 @@
         <p><strong>Why it matters:</strong></p>
         <p>Demonstrates real Rust application architecture (not just algorithms), stateful UI, and hands-on experience
             shipping a usable desktop tool.</p>
+    </article>
+
+    <article class="project2">
+        <h2>Project Card 2 — Sudoku Solver — Rust + Graph Theory</h2>
+        <p><strong>Stack:</strong> Rust · Petgraph · Constraint Propagation · Backtracking · MRV Heuristic</p>
+        <p><strong>What it is:</strong></p>
+        <p>A fast, from-scratch Sudoku solver built in Rust using a graph-based constraint system. Each cell is a node
+            in a constraint graph, and the solver uses hanging singles, candidate buckets, and an MRV-guided
+            backtracking search to solve even expert puzzles efficiently.</p>
+        <p><strong>Highlights:</strong></p>
+        <ul>
+            <li>
+                <strong>Rust Implementation:</strong> Strong ownership discipline, zero-cost abstractions, and efficient
+                cloning strategies for branching search.
+            </li>
+            <li><strong>Constraint Graph:</strong> 81 nodes, edges define Sudoku legality constraints. Fast neighbor
+                propagation using Petgraph. Each assignment invalidates incompatible neighbors and updates bucket
+                counts.
+
+            </li>
+            <li><strong>Inference Engine:</strong> Implements hanging single detection (deterministic propagation).
+                Automatically narrows constraints before any backtracking begins.
+
+            </li>
+            <li><strong>Backtracking Solver:</strong> MRV heuristic selects the most constrained cell. Recursive search
+                branches over remaining candidates. Propagates implications at each step to aggressively prune invalid
+                branches.
+
+            </li>
+            <li><strong>Result:</strong> Solves medium → expert puzzles extremely quickly, with clean, readable Rust
+                code and a mathematically rigorous architecture.
+
+            </li>
+        </ul>
+        <p><strong>Repository:</strong> <a href="https://github.com/TSKordziel/sudoku_solver">Here</a></p>
+        <p><strong>Status:</strong> Complete / actively refined</p>
+        <p><strong>Why it matters:</strong></p>
+        <p>This project demonstrates algorithmic engineering, graph modeling, and systems-level problem-solving in
+            Rust—far beyond typical CRUD/app-dev work. This project wasn’t about solving Sudoku; it was about proving
+            that I can architect and implement a complex state machine with real-time constraint propagation using clean
+            Rust. It was also a testbed for techniques I’m applying to larger projects, including graph-driven world
+            generation and local-first personal knowledge management systems.
+
+        </p>
     </article>
 
 
